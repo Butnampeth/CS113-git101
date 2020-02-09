@@ -1,0 +1,27 @@
+สัปดาห์ที่ 8
+สอนใช้ github
+ใน Command Prompt
+D:\>dir //แสดงสถานะต่างๆในไดร์ฟ D 
+D:\>mkdir 00 //สร้างไฟล์ในไดร์ฟ D ชื่อ 00
+D:\>cd 00 //เข้าไปในไฟล์
+D:\00>cd .. //ออกจากไฟล์ 00
+D:\>
+
+D:\>git --version
+//แสดง version 
+
+D:\>git init
+//แสดงงานในไฟล์นั้น
+
+D:\>git status
+//แสดงสถานะของไฟล์
+
+ใน Visual termuinal
+git add ชื่อไฟล์.txt
+git status //เช็คค่าสถานะของไฟล์
+git config user.name "ชื่อ"
+git config user.email "อีเมล"
+git commit -m "ชื่อไฟล์.txt" //ใส่ commit แล้วจะ modified ไฟล์
+git log --all --decorate --oneline --graph //ดูว่า commit ไว้ตรงไหน
+git remote add origin เว็ป
+git push -u origin master //รันใส่เข้าไปในเว็ป
