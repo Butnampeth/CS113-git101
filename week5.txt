@@ -1,0 +1,26 @@
+สัปดาห์ที่ 5
+#include <stdio.h>
+int addTen(int x) { //เป็นฟังก์ชั่น addTen
+//ในวงเล็บ()จะต้องมีกำหมดประเภทตัวแปร int แล้วก็ตัวแปร x
+//ชื่อฟังก์ชั่นจะต้องขึ้นต้นด้วยตัวพิมพ์เล็ก
+    x += 10;
+    printf("x in addTen = %d\n",x);
+    return x;
+}
+int addTwenty();
+int x = 100;
+int main() {
+    int x = 20;
+    int y = addTen(x);
+    printf("addTen = %d\n",y);
+    printf("addTwenty = %d\n",addTwenty(x));
+}
+int addTwenty(int x) { //เป็นฟังก์ชั่น addTwenty 
+    x = x+20;
+    printf("x in addTwenty = %d\n",x);
+    return x;
+}
+//การเลื่อน
+5 มีเลขฐานสองคือ 0101
+5>>2 คือ 01
+5<<1 คือ 01010
