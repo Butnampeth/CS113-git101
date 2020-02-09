@@ -1,0 +1,36 @@
+สัปดาห์ที่ 7ึ
+#include <studio.h>
+//void addTen(int number[], int n)
+void addTen(int *number, int n)
+{
+    //int number[] = {1, 2, 3, 4, 5};
+    //สมมุติว่าถ้า number = 00
+    //i = 1 จะได้ว่า number+i = 04
+    //ฐาน 16
+    for (int i=0; i<n; i++) {
+        printf(“addTen [%p] = %d\n”,number+i,*(number+i));
+        *(number+i) += 10;
+    }
+}
+int main()
+{
+    int n = 5;
+    int number[] = {1, 2, 3, 4, 5};
+    //addTen(&number[0], n);
+    addTen(number, n);
+    for (int i=0; i<n; i++) {
+        printf("[%p] = %d\n",number+i,*(number+i));
+        //printf("[%p] = %d\n",&number[i],number[i]);
+    }
+}
+//จะได้ผลว่า
+addTen [0028FF14] = 1
+addTen [0028FF18] = 2
+addTen [0028FF1C] = 3
+addTen [0028FF20] = 4
+addTen [0028FF24] = 5
+[0028FF14] = 11
+[0028FF18] = 12
+[0028FF1C] = 13
+[0028FF20] = 14
+[0028FF24] = 15
