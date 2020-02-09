@@ -1,0 +1,19 @@
+สัปดาห์ที่ 4
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+    fgets(x, 5, stdin);
+    int i = atoi(x);
+    int count = 0;
+    while (count<i) {
+        printf("%d\n", i);
+        count++;
+    }
+    for (int j=0; j<i; j++) {
+        printf("%d\n", j);
+    }
+}
+//count=0 ใน while คือ j=0 ใน for
+//count<i ใน while คือ j<i ใน for
+//count++ ใน while คือ j++ ใน for
+//โปรแกรมนี้จะรันเป็นลูปตั้งแต่ 0 ถึง i
