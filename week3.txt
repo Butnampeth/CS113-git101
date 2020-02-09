@@ -1,0 +1,25 @@
+สัปดาห์ที่ 3
+#include <stdio.h>
+#include <stdlib.h> //ใช้เมื่อมีการเปลี่ยนค่าจาก char เป็น int หรือมีการใช้ atoi, atof, atol
+char name[5]; //[เลข] Array จะกำหนดจำนวนตัวอักษรที่รับเข้ามาตามเลขที่อยู่ใน Array
+int main()
+{
+    printf("Enter name: ");
+    gets(name); //gets ใช้รับค่าจากคีย์บอร์ด
+    fgets(name, 5, stdin); //fgets ใช้รับค่าจากไหนก็ได้
+    printf("%s\n", name);
+    int i = atoi(name); //แปลง name เป็น int
+    //atoi ใช้กับ int
+    //atof ใช้กับ float, double
+    //atol ใช้กับ long
+}
+
+if (i==20 && i>20) { //&& = and
+    printf("i == 20\n");
+}else if (i==30 || i>30) { //|| = or
+    printf("i == 30\n");
+}else {
+    printf("else\n");
+}
+//เงื่อนไข if else
+//ถ้าไม่เข้าเงื่อนไข if ก็จะมาดู else if ต่อ แต่ถ้าไม่ตรงกับเงื่อนไขใดเลยถึงจะเข้า else
