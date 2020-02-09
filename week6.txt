@@ -1,0 +1,37 @@
+สัปดาห์ที่ 6
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+    char input[100];
+    gets(input); //ส่ง address pointer รับค่าตัวแปรธรรดาเก็บค่า
+    printf("reference of input %p\n",input); //พิมแค่ชื่อของ array จะมาแค่ address ที่ 0 reference of input 0028FECB
+    printf("reference of &input[0] %p\n",&input[0]); //reference of &input[0] 0028FECB
+    int number[] = {1,2,3,4,5};
+    number[100] = 3000; //เปลี่ยนค่าที่อยู่ใน address ได้ แปลง memory ตัวอื่นได้
+    //&number[100] = 3000; //เปลี่ยนค่า address ไม่ได้
+    printf("index 2 = %p\n",number[100]);
+    printf("index 2 = %d\n",number[100]);
+    int *ptr = &x; //pointer
+    int *arrPtr = number; //pointer บอกแค่ address เท่านั้น
+    arrPtr = number; //เปลี่ยนค่า address
+    *ptr = 1000; 
+    int number [] = {1,2,3,4};
+    char input[100];
+    gets(input);
+    for (int *)
+
+    char input[100];
+    int count = 0;
+    char c;
+    while ((c=getchar()) != '\n') {
+        input[count] = c;
+        ++count;
+    }
+
+    int a;
+    char c;
+    char s[300];
+    scanf("%d %c-%s",&a,&c,s); //scanf ใช้รับค่าแทน fgets และ gets
+    printf("%d-%c-%s",a,c,s);
+
+}
